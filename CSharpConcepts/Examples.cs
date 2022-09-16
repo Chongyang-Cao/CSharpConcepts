@@ -7,8 +7,8 @@ namespace CSharpConcepts
     {
         internal static void Run()
         {
-            CallTypeExamples();
-            CallSelectionExamples();
+            //CallTypeExamples();
+            //CallSelectionExamples();
         }
 
         private static void CallTypeExamples()

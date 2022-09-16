@@ -13,7 +13,35 @@ namespace CSharpConcepts.Classes.Exercises
         // If divisible by neither return the number itself (as a string)
         public static string FizzBuzz(int num)
         {
-            throw new NotImplementedException();
+            string a = "";
+            if (num %3 == 0)
+            {
+                a = "div3";
+            }
+            if (num%5 == 0)
+            {
+                a = "div5";
+            }
+            if (num%15 == 0){
+                a = "div15";
+            }
+
+            switch (a)
+            {
+                case "div15":
+                    return ("FizzBuzz");
+                    
+                case "div3":
+                    return ("Fizz");
+                  
+                case "div5":
+                    return("Buzz");
+                default:
+                    string num1 = Convert.ToString(num);
+                    return(num1);
+
+
+            }
         }
 
         // Q2: Vowel or Consonant
