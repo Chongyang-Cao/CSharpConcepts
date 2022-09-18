@@ -47,9 +47,28 @@ namespace CSharpConcepts
             //Console.WriteLine(SelectionExercises.FizzBuzz(30));
             //Console.WriteLine(SelectionExercises.FizzBuzz(25));
             //Console.WriteLine(SelectionExercises.FizzBuzz(9));
-            Console.WriteLine("# VowelOrConsonent");
+            //Console.WriteLine("# VowelOrConsonent");
+            //Console.WriteLine();
+            //Console.WriteLine(SelectionExercises.VowelOrConsonant(Convert.ToChar("a")));
+            //Console.WriteLine(SelectionExercises.VowelOrConsonant(Convert.ToChar("d")));
+            //Console.WriteLine("# DiceRoller");
+            //Console.WriteLine();
+            //SelectionExercises.DiceRoll();
+            //Console.WriteLine("# anglecheck");
+            //Console.WriteLine();
+            //Console.WriteLine(SelectionExercises.anglecheck(180));
+            //Console.WriteLine(SelectionExercises.anglecheck(65));
+            //Console.WriteLine(SelectionExercises.anglecheck(190));
+            //Console.WriteLine(SelectionExercises.anglecheck(125));
+            //Console.WriteLine("# Rock, Paper, Scissors");
+            //Console.WriteLine();
+            //SelectionExercises.RPS();
+            Console.WriteLine("# Triangle identify");
             Console.WriteLine();
-            Console.WriteLine(SelectionExercises.VowelOrConsonant(Convert.ToChar("a")));
+            Console.WriteLine(SelectionExercises.triangle(3, 4, 5));
+            Console.WriteLine(SelectionExercises.triangle(3, 3, 5));
+            Console.WriteLine(SelectionExercises.triangle(1, 1, 12));
+            Console.WriteLine(SelectionExercises.triangle(5, 5, 5));
         }
     }
 }
