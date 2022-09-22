@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -12,7 +13,15 @@ namespace CSharpConcepts.Classes.Exercises
         // Calculate the number of times a batter scored a century (100 runs) or more in a match
         public static int NumberOfCenturiesScored(List<int> runsScored)
         {
-            throw new NotImplementedException();
+            int a = 0;
+            foreach(int num in runsScored)
+            {
+                if (num >= 100)
+                {
+                    a += 1;
+                }
+            }
+            return a;
         }
 
         // Q2: Batting Average
@@ -20,7 +29,18 @@ namespace CSharpConcepts.Classes.Exercises
         // Exclude any values where the runs scored were negative as a negative value indicates that they did not bat in that match.
         public static double BattingAverage(List<int> runsScored)
         {
-           throw new NotImplementedException();
+            double average = 0;
+            int count = 0;
+           foreach (int num in runsScored)
+            {
+                if (num >= 0)
+                {
+                    average = average + num;
+                    count += 1;
+                }
+            }
+           average = average / count;
+           return average;
         }
 
         // Q3: User Names

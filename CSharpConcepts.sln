@@ -7,7 +7,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpConcepts", "CSharpCon
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpConcepts.Classes", "CSharpConcepts.Classes\CSharpConcepts.Classes.csproj", "{28F87670-145B-4E07-9180-57A83CC6016C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpConcepts.Tests", "CSharpConcepts.Tests\CSharpConcepts.Tests.csproj", "{E5B24C03-15BB-4A34-9C3F-EDC7D8FF861F}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6359AE7E-155B-4479-9575-3C3C93B299D2}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpConcepts.Tests", "CSharpConcepts.Tests\CSharpConcepts.Tests.csproj", "{0746BF63-2DAE-4C6B-B121-3459FC4C1756}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +28,10 @@ Global
 		{28F87670-145B-4E07-9180-57A83CC6016C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28F87670-145B-4E07-9180-57A83CC6016C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28F87670-145B-4E07-9180-57A83CC6016C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E5B24C03-15BB-4A34-9C3F-EDC7D8FF861F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E5B24C03-15BB-4A34-9C3F-EDC7D8FF861F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E5B24C03-15BB-4A34-9C3F-EDC7D8FF861F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E5B24C03-15BB-4A34-9C3F-EDC7D8FF861F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0746BF63-2DAE-4C6B-B121-3459FC4C1756}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0746BF63-2DAE-4C6B-B121-3459FC4C1756}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0746BF63-2DAE-4C6B-B121-3459FC4C1756}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0746BF63-2DAE-4C6B-B121-3459FC4C1756}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

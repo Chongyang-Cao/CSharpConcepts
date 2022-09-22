@@ -63,12 +63,18 @@ namespace CSharpConcepts
             //Console.WriteLine("# Rock, Paper, Scissors");
             //Console.WriteLine();
             //SelectionExercises.RPS();
-            Console.WriteLine("# Triangle identify");
+            //Console.WriteLine("# Triangle identify");
+            //Console.WriteLine();
+            //Console.WriteLine(SelectionExercises.triangle(3, 4, 5));
+            //Console.WriteLine(SelectionExercises.triangle(3, 3, 5));
+            //Console.WriteLine(SelectionExercises.triangle(1, 1, 12));
+            //Console.WriteLine(SelectionExercises.triangle(5, 5, 5));
+            //Console.WriteLine("# Century Runs");
+            //Console.WriteLine();
+            //Console.WriteLine(IterationExercises.NumberOfCenturiesScored(new(){ 100, 150, 75 }));
+            Console.WriteLine("# Average Runs");
             Console.WriteLine();
-            Console.WriteLine(SelectionExercises.triangle(3, 4, 5));
-            Console.WriteLine(SelectionExercises.triangle(3, 3, 5));
-            Console.WriteLine(SelectionExercises.triangle(1, 1, 12));
-            Console.WriteLine(SelectionExercises.triangle(5, 5, 5));
+            Console.WriteLine(IterationExercises.BattingAverage(new() { 123, 25, -1, 11, 83 }));
         }
     }
 }
