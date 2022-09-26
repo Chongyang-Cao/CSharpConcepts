@@ -13,17 +13,17 @@ namespace CSharpConcepts.Tests
         [DataRow(100, 5050)]
         public void TestSumOfNNumbers(int input, int expectedValue)
         {
-            //int total = IterationExamples.Sum(input);
-            //Assert.AreEqual(expectedValue, total);
+            int total = IterationExamples.Sum(input);
+            Assert.AreEqual(expectedValue, total);
         }
 
         [TestMethod]      
         public void TestSquaredNumbers()
         {
-            //List<double> input = new() { 0.5, 4, 0.25, 1, 2, -3 };
-            //List<double> expected = new() { 0.25, 16, 0.0625, 1, 4, 9 };
-            //List<double> squaredNumbers = IterationExamples.SquaredNumbers(input);
-            //CollectionAssert.AreEqual(expected, squaredNumbers);
+            List<double> input = new() { 0.5, 4, 0.25, 1, 2, -3 };
+            List<double> expected = new() { 0.25, 16, 0.0625, 1, 4, 9 };
+            List<double> squaredNumbers = IterationExamples.SquaredNumbers(input);
+            CollectionAssert.AreEqual(expected, squaredNumbers);
         }
     }
 }
