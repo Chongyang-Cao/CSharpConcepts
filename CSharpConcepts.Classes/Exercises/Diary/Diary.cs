@@ -20,7 +20,7 @@ namespace CSharpConcepts.Classes.Exercises.Diary
         // Properties
         public string Name { get; private set; }
 
-        public void AddEvent(DateOnly date, int hours, string description, string location, int minutes=0, int duration=60)
+        public void AddEvent(DateOnly date, int hours, string description, string location, int minutes = 0, int duration = 60)
         {
             var time = new TimeOnly(hours, minutes);
             var diaryEvent = new DiaryEvent(date, time, minutes, description, location);
@@ -31,10 +31,13 @@ namespace CSharpConcepts.Classes.Exercises.Diary
         {
             return diaryEvents.Count(diaryEvent => diaryEvent.Date == date);
         }
-
         // Add a new method called check morning events
+      
 
-        
+        public int CheckMorning(DateOnly date)
+        {
 
+            return diaryEvents.Count(diaryEvent => diaryEvent.Date == date && diaryEvent.IsMorning);
+        }
     }
-}
+} 

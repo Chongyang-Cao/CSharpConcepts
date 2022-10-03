@@ -94,43 +94,43 @@ namespace CSharpConcepts
             //Console.WriteLine("# Star Stairs");
             //Console.WriteLine();
             //IterationExercises.starstair(120);
-            Console.WriteLine("# Os and Xs");
-            Console.WriteLine();
-            List<List<char>> board = new()
-        {
-            new() { 'X', '0', 'X' },
-            new() { ' ', '0', ' ' },
-            new() { 'X', '0', ' ' }
-        };
-            List<List<char>> board1 = new()
-        {
-            new() { 'X', 'X', 'X' },
-            new() { ' ', '0', ' ' },
-            new() { 'X', '0', ' ' }
-        };
-            List<List<char>> board2 = new()
-        {
-            new() { 'X', '0', 'X' },
-            new() { ' ', 'X', ' ' },
-            new() { 'X', '0', ' ' }
-        };
-            List<List<char>> board3 = new()
-        {
-            new() { 'X', '0', 'X' },
-            new() { ' ', ' ', ' ' },
-            new() { 'X', '0', ' ' }
-        };
-            List<List<char>> board4 = new()
-        {
-            new() { 'X', '0', 'X' },
-            new() { 'X', '0', ' ' },
-            new() { 'X', '0', ' ' }
-        };
-            Console.WriteLine(IterationExercises.OsXs(board));
-            Console.WriteLine(IterationExercises.OsXs(board1));
-            Console.WriteLine(IterationExercises.OsXs(board2));
-            Console.WriteLine(IterationExercises.OsXs(board3));
-            Console.WriteLine(IterationExercises.OsXs(board4));
+        //    Console.WriteLine("# Os and Xs");
+        //    Console.WriteLine();
+        //    List<List<char>> board = new()
+        //{
+        //    new() { 'X', '0', 'X' },
+        //    new() { ' ', '0', ' ' },
+        //    new() { 'X', '0', ' ' }
+        //};
+        //    List<List<char>> board1 = new()
+        //{
+        //    new() { 'X', 'X', 'X' },
+        //    new() { ' ', '0', ' ' },
+        //    new() { 'X', '0', ' ' }
+        //};
+        //    List<List<char>> board2 = new()
+        //{
+        //    new() { 'X', '0', 'X' },
+        //    new() { ' ', 'X', ' ' },
+        //    new() { 'X', '0', ' ' }
+        //};
+        //    List<List<char>> board3 = new()
+        //{
+        //    new() { 'X', '0', 'X' },
+        //    new() { ' ', ' ', ' ' },
+        //    new() { 'X', '0', ' ' }
+        //};
+        //    List<List<char>> board4 = new()
+        //{
+        //    new() { 'X', '0', 'X' },
+        //    new() { 'X', '0', ' ' },
+        //    new() { 'X', '0', ' ' }
+        //};
+        //    Console.WriteLine(IterationExercises.OsXs(board));
+        //    Console.WriteLine(IterationExercises.OsXs(board1));
+        //    Console.WriteLine(IterationExercises.OsXs(board2));
+        //    Console.WriteLine(IterationExercises.OsXs(board3));
+        //    Console.WriteLine(IterationExercises.OsXs(board4));
         }
     }
 }
