@@ -9,6 +9,12 @@ namespace CSharpConcepts.Classes.Exercises.BankAccount
 {
     public class BankAccount
     {
+        public List<BankAccount> bankAccounts = new List<BankAccount>();
+        public void AddAction(decimal balance, DateTime day, decimal overdraft)
+        {
+            var  bankaccount = new BankAccount(balance, day, overdraft);
+            bankAccounts.Add(bankaccount);
+        }
         // As you complete each task make sure you test your code carefully
         // Choose some combination of manual testing, Debug.Assert and unit tests
 
@@ -19,17 +25,18 @@ namespace CSharpConcepts.Classes.Exercises.BankAccount
         public decimal Balance { get; private set; }
         public DateTime Opendate { get; private set; }
         public decimal Overdraft { get; private set; }
-        public BankAccount(decimal balance, DateTime opendate)
+        public BankAccount(decimal balance, DateTime opendate, decimal overdraft)
         {
             Balance = balance;
             Opendate = opendate;
+            Overdraft = overdraft;
         }
 
         public BankAccount()
         {
             Balance = 0;
             Opendate= DateTime.Now;
-            Overdraft= 0;
+            Overdraft = 0;
         }
         // Task Two
         // Give the option to set an overdraft limit
@@ -64,6 +71,7 @@ namespace CSharpConcepts.Classes.Exercises.BankAccount
     public class Account_Transaction
     {
         public DateTime Date { get; private set; }
+        public decimal Balance { get; private set; }
         public int Amount { get; private set;  }
         public string Category { get; private set; }
         public string Counterparty { get; private set; }
@@ -79,10 +87,13 @@ namespace CSharpConcepts.Classes.Exercises.BankAccount
             Counterparty = counterparty;
             TransactionType = transactionType;
         }
-        public bool CheckOverdaft(decimal balance)
+        public bool CheckOverdaft
         {
 
-            return balance < Overdraft;
+            get
+            {
+                return Balance < Overdraft;
+            }
         }
     }
 }

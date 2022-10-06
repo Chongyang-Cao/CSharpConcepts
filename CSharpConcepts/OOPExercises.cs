@@ -42,10 +42,20 @@ namespace CSharpConcepts
         internal static void UseBankAccount()
         {
             // Implement your bank account class following the instructions in the BankAccount class
-            BankAccount bankaccount = new BankAccount(new decimal(39.50), new DateTime(2022, 10, 11, 16, 50, 00));
-            Debug.Assert(bankaccount.Balance == new decimal(39.50));
-            Debug.Assert(bankaccount.Opendate == new DateTime(2022, 10, 11, 16, 50, 00));
-            // Write calling code from here
+            //BankAccount bankaccount = new BankAccount(new decimal(39.50), new DateTime(2022, 10, 11, 16, 50, 00), new decimal(200));
+            //Debug.Assert(bankaccount.Balance == new decimal(39.50));
+            //Debug.Assert(bankaccount.Opendate == new DateTime(2022, 10, 11, 16, 50, 00));
+            //Debug.Assert(bankaccount.Overdraft == new decimal(200));
+            //seems to work
+            
+            decimal balance = 300;
+            DateTime day = new DateTime(2022, 10, 11, 5, 20, 00);
+            decimal overdraft = 500;
+            BankAccount bankAccount = new BankAccount(balance, day, overdraft);
+            bankAccount.AddAction(balance, day, overdraft);
+            
+            
+
         }
     }
 }
