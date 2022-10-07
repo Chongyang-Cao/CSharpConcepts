@@ -70,23 +70,25 @@ namespace CSharpConcepts.Classes.Exercises.BankAccount
     }
     public class Account_Transaction
     {
+
         public DateTime Date { get; private set; }
         public decimal Balance { get; private set; }
-        public int Amount { get; private set;  }
+        public int Amount { get; private set; }
         public string Category { get; private set; }
         public string Counterparty { get; private set; }
         public string TransactionType { get; private set; }
         public decimal Overdraft { get; private set; }
-
-
-        public Account_Transaction(DateTime date, int amount, string category, string counterparty, string transactionType)
+        public string Name { get; private set; }
+    
+        public Account_Transaction(string name, DateTime date, int amount, string category, string counterparty, string transactionType)
         {
+            Name = name;
             Date = date;
             Amount = amount;
             Category = category;
             Counterparty = counterparty;
             TransactionType = transactionType;
-        }
+              }
         public bool CheckOverdaft
         {
 
@@ -94,6 +96,12 @@ namespace CSharpConcepts.Classes.Exercises.BankAccount
             {
                 return Balance < Overdraft;
             }
+        }
+       
+        public void AddAction2(string name,DateTime date, int amount, string category, string counterparty, string transactionType)
+        {
+            var BankAction = new Account_Transaction(name,date, amount, category, counterparty, transactionType);
+            BankAccount.Add(BankAction);
         }
     }
 }

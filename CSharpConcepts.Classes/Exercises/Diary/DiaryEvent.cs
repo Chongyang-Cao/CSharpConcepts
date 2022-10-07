@@ -30,5 +30,6 @@ namespace CSharpConcepts.Classes.Exercises.Diary
             Description = description;
             Location = location;
         }
+            
     }
 }
